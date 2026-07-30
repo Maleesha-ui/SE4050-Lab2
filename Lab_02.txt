@@ -1,0 +1,14 @@
+Task2_Answers.txt
+1. What happens when the number of hidden nodes increase?
+As the number of hidden nodes increases, the neural network gains the ability to learn more complex and non-linear patterns in the data. This generally leads to an increase in prediction accuracy. In our experimental results, the accuracy improved significantly from 67.5% with 1 hidden unit to 91.25% with 5 hidden units, demonstrating that adding more hidden nodes allows the model to fit the training data better.
+
+2. Can you explain the pattern of the accuracy when the hidden nodes increase?
+The pattern of accuracy follows a clear trend:
+
+With very few hidden nodes (e.g., 1 or 2): The model suffers from underfitting. It is too simple to capture the complex structure of the "flower" dataset, resulting in lower accuracy (around 67%).
+
+As hidden nodes increase (e.g., 3 to 5): The accuracy rises sharply, reaching a peak of 91.25% at 5 hidden units. The model becomes capable of learning the decision boundary effectively.
+
+With a very large number of hidden nodes (e.g., 20 or 50): The accuracy starts to plateau or slightly decrease (e.g., dropping to 90.25% at 50 hidden units). This indicates overfitting, where the model memorizes the training data too closely and loses some ability to generalize.
+
+Therefore, the optimal hidden layer size for this specific dataset is around 4 to 5 nodes, balancing between underfitting and overfitting.
